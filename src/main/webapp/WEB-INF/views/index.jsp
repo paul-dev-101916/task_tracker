@@ -13,6 +13,7 @@ pageEncoding="ISO-8859-1"%>
 		<h2>Hello World</h2>
 		<h3>
 			<a href="hello?name=Eric">Click Here</a>
+			<img src="./resources/img/10-dithering-opt.jpg" alt="Mountain View" style="width:304px;height:228px;"/>
 		</h3>
 	</center>
 </body>
