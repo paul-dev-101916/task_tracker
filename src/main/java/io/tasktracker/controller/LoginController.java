@@ -6,11 +6,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/*")
 public class LoginController {
 	String message = "Welcome to Spring MVC!";
  
-	@RequestMapping("/hello")
+	@RequestMapping("/login.do")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("in controller");
@@ -21,11 +20,19 @@ public class LoginController {
 		return mv;
 	}
 	
+//	@RequestMapping("/tasktracker/")
+//	public ModelAndView login() {
+//		System.out.println("before login");
+// 
+//		ModelAndView mv = new ModelAndView("login");
+//		return mv;
+//	}
+	
 	@RequestMapping("/")
 	public ModelAndView login() {
 		System.out.println("before login");
  
-		ModelAndView mv = new ModelAndView("index");
+		ModelAndView mv = new ModelAndView("login");
 		return mv;
 	}
 }

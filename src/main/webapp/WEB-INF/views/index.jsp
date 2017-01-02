@@ -5,7 +5,8 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring 4 MVC - HelloWorld Index Page</title>
+<title>HelloWorld Index Page</title>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 </head>
 <body>
  
