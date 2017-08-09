@@ -5,7 +5,7 @@
 	<artifactId>tasktracker</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tasktracker webapp</name>
+	<name>tasktracker webapp 1</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<spring.version>4.0.1.RELEASE</spring.version>
