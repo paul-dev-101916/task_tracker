@@ -14,7 +14,7 @@ public class LoginController {
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("in controller");
  
-		ModelAndView mv = new ModelAndView("login");
+		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
 		return mv;

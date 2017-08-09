@@ -12,7 +12,8 @@
 	<mvc:annotation-driven />
 	<context:component-scan base-package="io.tasktracker.controller" />
 	<!-- the mvc resources tag does the magic -->
-	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/static/**" location="/resources/" />
+<mvc:default-servlet-handler />
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
