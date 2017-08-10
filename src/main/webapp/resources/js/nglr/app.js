@@ -9,35 +9,25 @@
         $routeProvider
 
             // route for the home page
-            .when('/', {
-                templateUrl : 'static/html/home.html',
-                controller  : 'mainController'
+            .when('/tasks', {
+                templateUrl : 'static/html/tasks.html',
+                controller  : 'tasksController'
             })
 
             // route for the about page
-            .when('about', {
-                templateUrl : 'static/html/about.html',
+            .when('/projects', {
+                templateUrl : 'static/html/projects.html',
                 controller  : 'aboutController'
             })
-
-            // route for the contact page
-            .when('contact', {
-                templateUrl : 'static/html/contact.html',
-                controller  : 'contactController'
-            });
     });
     
     
     // create the controller and inject Angular's $scope
-    scotchApp.controller('mainController', function($scope) {
+    scotchApp.controller('tasksController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
     });
 
-    scotchApp.controller('aboutController', function($scope) {
+    scotchApp.controller('projectsController', function($scope) {
         $scope.message = 'Look! I am an about page.';
-    });
-
-    scotchApp.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
     });
